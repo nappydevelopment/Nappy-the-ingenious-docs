@@ -17,7 +17,7 @@
     <node id="n0" yfiles.foldertype="group">
       <data key="d6">
         <y:TableNode configuration="com.yworks.bpmn.Pool">
-          <y:Geometry height="559.6" width="552.9999999999998" x="213.63687605625017" y="84.5"/>
+          <y:Geometry height="608.6" width="552.9999999999998" x="213.63687605625017" y="84.5"/>
           <y:Fill color="#FFF2BC" color2="#0042F440" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="1.0"/>
           <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="15" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="22.37646484375" modelName="internal" modelPosition="t" textColor="#000000" visible="true" width="169.90087890625" x="191.5495605468749" y="4.0">Use-Case: Gamemode 2</y:NodeLabel>
@@ -58,7 +58,7 @@
           </y:StyleProperties>
           <y:State autoResize="true" closed="false" closedHeight="80.0" closedWidth="100.0"/>
           <y:Insets bottom="0" bottomF="0.0" left="0" leftF="0.0" right="0" rightF="0.0" top="0" topF="0.0"/>
-          <y:BorderInsets bottom="7" bottomF="6.974999999999909" left="312" leftF="311.99999999999994" right="54" rightF="53.999999999999886" top="202" topF="201.75"/>
+          <y:BorderInsets bottom="20" bottomF="19.97499999999991" left="120" leftF="120.00000000000006" right="54" rightF="53.999999999999886" top="202" topF="201.75"/>
           <y:Table autoResizeTable="true" defaultColumnWidth="202.0" defaultMinimumColumnWidth="30.0" defaultMinimumRowHeight="30.0" defaultRowHeight="280.0">
             <y:DefaultColumnInsets bottom="3.0" left="3.0" right="3.0" top="20.0"/>
             <y:DefaultRowInsets bottom="3.0" left="20.0" right="3.0" top="3.0"/>
@@ -72,7 +72,7 @@
               </y:Column>
             </y:Columns>
             <y:Rows>
-              <y:Row height="506.6" id="row_0" minimumHeight="30.0">
+              <y:Row height="555.6" id="row_0" minimumHeight="30.0">
                 <y:Insets bottom="3.0" left="20.0" right="3.0" top="3.0"/>
               </y:Row>
             </y:Rows>
@@ -102,7 +102,8 @@
               <y:Geometry height="52.0" width="164.0" x="545.6368760562501" y="544.75"/>
               <y:Fill color="#00CCFF" transparent="false"/>
               <y:BorderStyle hasColor="false" type="line" width="1.0"/>
-              <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" modelName="custom" textColor="#000000" visible="true" width="110.060546875" x="26.9697265625" y="16.6494140625">Ergebnis auswerten<y:LabelModel>
+              <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="33.40234375" modelName="custom" textColor="#000000" visible="true" width="110.060546875" x="26.9697265625" y="9.298828125">Ergebnis auswerten
+und anzeigen<y:LabelModel>
                   <y:SmartNodeLabelModel distance="4.0"/>
                 </y:LabelModel>
                 <y:ModelParameter>
@@ -115,7 +116,7 @@
         <node id="n0::n2">
           <data key="d6">
             <y:ShapeNode>
-              <y:Geometry height="18.0" width="18.0" x="618.6368760562501" y="616.1250000000001"/>
+              <y:Geometry height="18.0" width="18.0" x="353.63687605625023" y="652.1250000000001"/>
               <y:Fill color="#000000" transparent="false"/>
               <y:BorderStyle color="#000000" type="line" width="1.0"/>
               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" hasText="false" height="4.0" modelName="custom" textColor="#000000" visible="true" width="4.0" x="7.0" y="7.0">
@@ -316,7 +317,7 @@
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0">
-            <y:Point x="627.6368760562501" y="612.2749999999996"/>
+            <y:Point x="627.6368760562501" y="661.1250000000001"/>
           </y:Path>
           <y:LineStyle color="#000000" type="line" width="1.0"/>
           <y:Arrows source="none" target="standard"/>
