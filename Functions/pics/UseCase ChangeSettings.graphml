@@ -15,7 +15,6 @@
   <graph edgedefault="directed" id="G">
     <data key="d0"/>
     <node id="n0" yfiles.foldertype="group">
-      <data key="d5"/>
       <data key="d6">
         <y:TableNode configuration="com.yworks.bpmn.Pool">
           <y:Geometry height="700.1250000000006" width="573.0" x="242.27375211250046" y="239.0"/>
@@ -184,7 +183,7 @@ anzeigen</y:NodeLabel>
         <node id="n0::n9">
           <data key="d6">
             <y:ShapeNode>
-              <y:Geometry height="18.0" width="18.0" x="666.5475042250009" y="900.1250000000006"/>
+              <y:Geometry height="18.0" width="18.0" x="378.27375211250046" y="900.1250000000006"/>
               <y:Fill color="#000000" transparent="false"/>
               <y:BorderStyle color="#000000" type="line" width="1.0"/>
               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" hasText="false" height="4.0" modelName="custom" textColor="#000000" visible="true" width="4.0" x="7.0" y="7.0">
@@ -202,7 +201,6 @@ anzeigen</y:NodeLabel>
       </graph>
     </node>
     <edge id="n0::e0" source="n0::n8" target="n0::n0">
-      <data key="d9"/>
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
@@ -213,7 +211,6 @@ anzeigen</y:NodeLabel>
       </data>
     </edge>
     <edge id="n0::e1" source="n0::n0" target="n0::n1">
-      <data key="d9"/>
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0">
@@ -226,7 +223,6 @@ anzeigen</y:NodeLabel>
       </data>
     </edge>
     <edge id="n0::e2" source="n0::n1" target="n0::n2">
-      <data key="d9"/>
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0">
@@ -241,7 +237,6 @@ anzeigen</y:NodeLabel>
       </data>
     </edge>
     <edge id="n0::e3" source="n0::n2" target="n0::n3">
-      <data key="d9"/>
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
@@ -252,7 +247,6 @@ anzeigen</y:NodeLabel>
       </data>
     </edge>
     <edge id="n0::e4" source="n0::n3" target="n0::n4">
-      <data key="d9"/>
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
@@ -263,7 +257,6 @@ anzeigen</y:NodeLabel>
       </data>
     </edge>
     <edge id="n0::e5" source="n0::n4" target="n0::n5">
-      <data key="d9"/>
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
@@ -274,7 +267,6 @@ anzeigen</y:NodeLabel>
       </data>
     </edge>
     <edge id="n0::e6" source="n0::n5" target="n0::n6">
-      <data key="d9"/>
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
@@ -285,7 +277,6 @@ anzeigen</y:NodeLabel>
       </data>
     </edge>
     <edge id="n0::e7" source="n0::n6" target="n0::n7">
-      <data key="d9"/>
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
@@ -299,7 +290,9 @@ anzeigen</y:NodeLabel>
       <data key="d9"/>
       <data key="d10">
         <y:PolyLineEdge>
-          <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
+          <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0">
+            <y:Point x="675.5475042250009" y="909.1250000000006"/>
+          </y:Path>
           <y:LineStyle color="#000000" type="line" width="1.0"/>
           <y:Arrows source="none" target="standard"/>
           <y:BendStyle smoothed="false"/>
