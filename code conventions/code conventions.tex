@@ -1,0 +1,207 @@
+\documentclass[fontsize=11,DIV=10]{scrartcl}
+\KOMAoptions{footnotes=multiple}
+
+\usepackage{hyperref}
+\hypersetup{
+	colorlinks=true,
+	allcolors=black,
+	linktoc=all,
+	pdfauthor=Author,
+	pdfencoding=auto
+}
+
+\usepackage[svgnames,table]{xcolor}
+\usepackage{graphicx}
+
+\usepackage{listings}
+
+\usepackage{tocloft}
+\renewcommand{\cftsecleader}{\cftdotfill{\cftdotsep}}
+
+\usepackage{fontspec}
+\usepackage{microtype}
+%\setmainfont{DejaVu Serif} 	% Set fonts here
+%\setsansfont{DejaVu Serif}
+%\setmonofont{DejaVu Sans Mono}
+
+%\usepackage{metalogo} % for \latex and such
+%\usepackage{amsmath}
+
+\usepackage{booktabs}	% better tables with \toprule \midrule and \bottomrule
+
+\usepackage{enumitem}
+\setlist[description]{style=nextline,labelsep*=3em}
+
+\usepackage[yyyymmdd]{datetime}
+\renewcommand{\dateseparator}{.}
+
+% germanify stuff
+\renewcommand{\contentsname}{Inhaltsverzeichnis}
+
+\renewcommand{\listfigurename}{Abbildungsverzeichnis}
+\renewcommand{\figurename}{Abbildung}
+
+\renewcommand{\listtablename}{Tabellenverzeichnis}
+\renewcommand{\tablename}{Tabelle}
+
+
+\setlength{\parindent}{0pt}			% kein einzug
+\setlength{\parskip}{0pt}			% kein vertical space zwischen pars
+%\setlength{\mathindent}{0pt}		% kein mathe einzug
+
+
+\begin{document}
+
+{\Huge \bfseries Code Conventions v0.3 \hfill {\normalsize \today{}} \vspace{5pt}\\}
+	This document is still under review and will change later on.
+
+\vspace{2em}
+
+\microtypesetup{protrusion=false}
+\tableofcontents{}	\addtocontents{toc}{~\hfill\textbf{Seite}\par}
+\microtypesetup{protrusion=true}
+
+\newpage
+
+
+\section{Tabs}
+	This is one of points where teams often fight about.
+	We will use a tab size of 4 spaces.
+
+
+\section{Line length}
+	Lines should not get longer than 140 characters (TODO: verify this)
+	\subsection{Breaking function parameters}
+		if they get too long, break like this:
+		\begin{lstlisting}[tabsize=2]
+			private static synchronized horkingLongMethodName(
+					int anArg,
+					Object anotherArg,
+					String yetAnotherArg,
+					Object andStillAnother
+				){
+					code();
+			}
+		\end{lstlisting}
+	\subsection{Breaking if's}
+		\begin{lstlisting}[tabsize=2]
+			if( (condition1 && condition2)
+					|| (condition3 && condition4)
+					||!(condition5 && condition6)
+				){
+					doSomethingAboutIt();
+			}
+		\end{lstlisting}
+
+
+\section{Getters and Setters}
+	All variables are private!
+
+	Getters and setters will be used for accessing and setting the variables, if needed.
+
+
+\section{Function Naming}
+	Marc will assign names to Functions.
+
+
+\section{Variable Naming}
+	\begin{description}
+		\item[camelCase]{
+			Variables start small and then every new Word is written big.
+		}
+		\item[Hungarian Notation]{
+			We will use specifiers defining the Type of the variables.
+			These will be mostly be one letter long and stand in front of the name.\\
+			If a type of Object is used only once or twice it has the specifier o, else it got to have something else.
+			This will help differentiating the Object types.
+			% https://en.wikipedia.org/wiki/Hungarian_notation
+		}
+		\item[Constants]{
+			written in big LETTERS and underscores split the words.
+		}
+	\end{description}
+	\begin{tabular}{r l}
+		\toprule
+		type & specifier \\ \midrule
+		integer & i \\
+		unsigned integer & ui \\
+		boolean & b \\
+		string & s \\
+		float & f \\
+		double & d \\
+		object\footnotemark{} & o \\
+		array & a<data type> \\
+
+		Character & chr \\
+
+		textfield & txt \\
+		textarea & txa \\
+		Button & btn \\
+		Menu & mnu \\
+		label & lbl \\ \bottomrule
+	\end{tabular}
+	\footnotetext{If only one instance is used}
+	\subsection{Example}
+		iLoop for an integer which is used in loops \\
+		sName for an String which holds a name \\
+
+
+
+\section{Spacing}
+	(TODO: discuss about this)
+	\subsection{Space after if, for and while}
+		no space after if, for or while and the opening parentheses.
+	\subsection{Space between ) and \{}
+		no space or newline between ) and \{.
+	\subsection{Space in for loop definitions}
+		\begin{lstlisting}[tabsize=2]
+			for(int i = 2; i<1; i--){
+				...
+		\end{lstlisting}
+	\subsection{One Statement in one Line}
+		After each Statement insert one newline and tabs.
+	\subsection{K\&R Style tabs and parentheses}
+		K\&R Style tabs and parentheses:
+		\begin{lstlisting}[tabsize=2]
+			if(x < 0){
+				System.out.println("Negative");
+				negative(x);
+			}else{
+				System.out.println("Non-negative");
+				nonnegative(x);
+			}
+		\end{lstlisting}
+
+
+\section{Function Parameters}
+		(TODO: discuss about this)
+	\subsection{Ordering}
+		From the most common variables to the ones that are changing most often.
+	\subsection{All parameters are constant}
+		The Parameters given to a function should be constant (final).
+
+		The return statement is used for retuning stuff!
+
+
+\section{Errors}
+	If the function has enough knowledge to prevent errors, it should do so!
+
+	If not then it should throw the Error to the caller.
+
+
+	This should escalate till some function handles the Error.
+	If the Error can not be handled then the Program should print the Error and exit (System.exit(1)).
+
+	(TODO: use Common function for error printing and exit)
+
+
+\section{No ternary expressions}
+	This one should be simple.
+
+
+\section{Fully Qualify Imports}
+	no stars in imports!
+
+
+
+\end{document}
