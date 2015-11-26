@@ -7,3 +7,8 @@ exists("settings_title.png")
 click("settings_opt_en.png")
 click("settings_btn_apply.png")
 exists("main.png")
+
+
+
+
+

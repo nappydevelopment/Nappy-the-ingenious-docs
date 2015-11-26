@@ -1,0 +1,7 @@
+exists("main.png")
+click("menu_btn_help.png")
+exists("menu_help.png")
+click("menu_btn_info.png")
+exists()
+click("close.png")
+exists("main.png")
