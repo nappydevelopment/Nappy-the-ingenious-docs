@@ -12,4 +12,3 @@ click("abort_game_btn.png")
 exists("main.png")
 click("main_btn_new.png")
 exists("gamemode1_btns.png")
-//play gamemode und finish
